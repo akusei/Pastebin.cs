@@ -2,22 +2,28 @@
 
   <PropertyGroup>
     <TargetFrameworks>net46;netstandard1.6</TargetFrameworks>
-    <AssemblyVersion>2.0</AssemblyVersion>
+    <AssemblyVersion>2.1</AssemblyVersion>
     <PackageVersion>$(AssemblyVersion)</PackageVersion>
     <PackageId>Pastebin-Api</PackageId>
-    <Authors>Tony Montana</Authors>
+    <Authors>Tony Montana, Nathan Martini</Authors>
     <Product>Pastebin.cs</Product>
     <Description>A C# wrapper around the Pastebin API.</Description>
     <Copyright>Copyright © 2015+ Tony J. Hudgins</Copyright>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/SirTony/Pastebin.cs/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/SirTony/Pastebin.cs</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/akusei/Pastebin.cs/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/akusei/Pastebin.cs</PackageProjectUrl>
     <PackageTags>pastebin web-api</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.1.0</Version>
+    <Company>Tony Montana, Nathan Martini</Company>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
     <PackageReference Include="System.Net.Requests" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
 
 </Project>
