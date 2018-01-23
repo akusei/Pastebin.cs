@@ -19,7 +19,7 @@ namespace Pastebin
         private const uint MaxRequestsPerBurst = 30;
         private const double PaceRequestTimeout = 2000;
 
-        private const string UserAgent = "Pastebin.cs v2.5";
+        private const string UserAgent = "Pastebin.cs v2.1";
         private readonly RateLimitMode _rateLimitMode;
 
         public readonly string ApiKey;
