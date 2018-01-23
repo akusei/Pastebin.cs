@@ -184,3 +184,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+/.vs/Pastebin/v15/Server/sqlite3

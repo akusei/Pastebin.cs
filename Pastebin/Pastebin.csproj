@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net46;netstandard1.6</TargetFrameworks>
-    <AssemblyVersion>2.0</AssemblyVersion>
+    <AssemblyVersion>2.1</AssemblyVersion>
     <PackageVersion>$(AssemblyVersion)</PackageVersion>
     <PackageId>Pastebin-Api</PackageId>
     <Authors>Tony Montana</Authors>
@@ -13,11 +13,17 @@
     <PackageProjectUrl>https://github.com/SirTony/Pastebin.cs</PackageProjectUrl>
     <PackageTags>pastebin web-api</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.1.0</Version>
+    <Company>Tony Montana</Company>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
     <PackageReference Include="System.Net.Requests" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
 
 </Project>

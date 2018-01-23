@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -123,7 +124,7 @@ namespace Pastebin
                     ["api_paste_key"] = this.Id
                 };
 
-                this._text = await this._agent.CreateAndExecuteAsync( Paste.RawPrivateUrl, "POST", parameters )
+                this._text = await this._agent.CreateAndExecuteAsync( Paste.RawPrivateUrl, HttpMethod.Post, parameters )
                                        .ConfigureAwait( false );
             }
 
